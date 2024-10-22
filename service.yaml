@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 apiVersion: v1
 kind: Service
 metadata:
@@ -12,3 +13,19 @@ spec:
       targetPort: 8080
       nodePort: 30000
   type: NodePort
+=======
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-app-service
+  namespace: my-namespace
+spec:
+  selector:
+    app: flask-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 30000
+  type: NodePort
+>>>>>>> d4070a21157a47d835f83c6d445a0e35a21fdf18

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 __pycache__
 *.pyc
 .git
+=======
+__pycache__
+*.pyc
+.git
+>>>>>>> d4070a21157a47d835f83c6d445a0e35a21fdf18
 .vscode

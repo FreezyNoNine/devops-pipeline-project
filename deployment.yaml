@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,3 +19,25 @@ spec:
         image: localhost:30336/my-flask-app:latest
         ports:
         - containerPort: 8080
+=======
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: my-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+      - name: flask-app
+        image: localhost:30336/my-flask-app:latest
+        ports:
+        - containerPort: 8080
+>>>>>>> d4070a21157a47d835f83c6d445a0e35a21fdf18
